@@ -1,0 +1,548 @@
+﻿@charset "utf-8";
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 75rem;
+  margin: 0 18rem;
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+/* ヘッダー */
+.logo {
+  display: block;
+}
+.logo img {
+  height: 3rem;
+}
+
+/* ナビゲーション */
+.list {
+  margin-left: auto;
+}
+
+/* リストナビ */
+.nav_list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.nav_list li+li {
+  border-left: 0.1rem solid #ccc;
+}
+.nav_list .menu_name{
+  text-decoration: none;
+  color: #000;
+}
+.nav_list li{
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav_list li ::after{
+  display: block;
+  position: absolute;
+  border-bottom: solid 0.1rem #195beb;
+  bottom: 0;
+  left: 0;
+  content: '';
+  height: 0.01rem;
+  transform-origin: left top;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  width: 0;
+}
+.nav_list li :hover ::after{
+  width: 100%;
+}
+.nav_list :hover{
+  opacity: 0.8;
+}
+.menu_name{
+  padding: 1rem 1.8rem;
+}
+span {
+  display: block;
+  font-size: 0.5rem;
+  text-align: center;
+}
+.nav_bold{
+ font-weight: bold;
+}
+
+/* フッター */
+.footer_list{
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+.footer_list td {
+  border: solid 0.1rem rgba(0, 0, 0, .05);
+  padding: 1rem;
+  text-align: center;
+}
+.footer_name1 {
+  color: #069292;
+}
+.footer_name2 {
+  color: #dfae8a;
+}
+.footer_name3 {
+  color: #95caef;
+}
+.footer_name4 {
+  color: #905951;
+}
+.footer_name5 {
+  color: #bc83c9;
+}
+.footer_name6 {
+  color: #228f5a;
+}
+.fadein td :hover{
+  opacity: 0.8;
+}
+/* SNS */
+.sns_fadein {
+	margin-top: 2rem;
+	text-align: center;
+}
+.sns_fadein img{
+	width: 2rem;
+	height: 2rem;
+	padding: 0.5rem 0.8rem;
+}
+.desc_fadeon {
+  text-align: center;
+}
+.text_center{
+  margin-bottom: 1rem;
+}
+.text_center img {
+  width: 10rem;
+}
+.desc_fadeon a{
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #000;
+}
+.copyright{
+  font-size: 0.8rem;
+  margin: 1rem;
+}
+
+/* top */
+/* タイトル */
+.top_title {
+  text-align: center;
+  position: relative;
+}
+.top_title img {
+  width: 26rem;
+}
+.top{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  color: #20398B;
+}
+.top p {
+  margin-bottom: 0.2rem;
+}
+.top h2 {
+  margin-top: 0;
+}
+
+/* 営業時間 */
+.hours {
+  text-align: center;
+  margin-top: 2rem;
+}
+.hours p{
+  display: inline-block;
+  line-height: 2rem;
+}
+.open {
+  text-align: right;
+  margin-right: 1.5rem;
+}
+.time {
+  text-align: left;
+}
+
+/* ポイント */
+.point {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.point h2 {
+  color: #20398B;
+  padding: .5rem 1rem;
+  border: 1px solid #20398B;
+  display: inline-block;
+  border-radius: 1rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+.point img {
+  width: 11rem;
+  padding: 1.5rem;
+}
+
+/* お知らせ */
+.update {
+  text-align: center;
+  padding: 3rem;
+}
+.update h2 {
+  font-size: 1.5rem;
+  display: flex;
+  background: linear-gradient(transparent 70%, #eadeeb 70%);
+  padding-left: 1rem;
+  align-items: center;
+  margin: 0 28rem;
+}
+.update span {
+  font-size: 1rem;
+  padding-left: 2rem;
+  margin-top: 0.5rem;
+}
+.update a {
+  display: inline-block;
+  margin: 2rem auto 2rem;
+  text-align: center;
+  background-color: rgb(240, 240, 240);
+  color: black;
+  padding: 1rem 4rem;
+  border-radius: 10px;
+  font-size: 13px;
+  letter-spacing: .5rem;
+  text-decoration: none;
+}
+
+/* プランページ */
+.plan_list_page {
+  background-color: #92cfcf;
+  color: #fff;
+  height: 6rem;
+  position: relative;
+  text-align: center;
+	width: 100%;
+	margin-top: 1rem;
+}
+.list_title {
+  margin-bottom: 0 !important;
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  font-weight: bold;
+  font-family: vdl-yotag, sans-serif;
+}
+
+/* プランリスト */
+.plan_top_list {
+  display: flex;
+  margin: 1rem auto;
+  justify-content: center;
+  margin: 3rem 0 5rem 0;
+  font-size: 0.9rem;
+}
+.box {
+  background-color: #fff;
+  border-radius: 4rem;
+  display: inline-block;
+  margin: 2rem auto 0 ;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+}
+.box span {
+  font-size: 1rem;
+}
+.plan_time {
+  display: inline-block;
+  text-align: center;
+}
+.plan_time th{
+  padding: 1rem;
+  font-weight: normal;
+}
+.plan_list1 {
+  background-color: #f5e7dc;
+  border-radius: 1rem;
+  width: 20rem;
+  height: 25rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+.plan_list1 .plan_table{
+  padding: 4rem 1rem 0 1.8rem;
+  text-align: center;
+}
+.plan_list2 {
+  background-color: #92cfcf;
+  border-radius: 1rem;
+  width: 20rem;
+  height: 25rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+.plan_list2 .plan_time{
+  padding: 3rem 0 0 1.5rem;
+  text-align: left;
+}
+.plan_list2 p{
+  padding: 1rem 1.5rem 0 2rem;
+  text-align: left;
+}
+.plan_list3 {
+  background-color: #dceaf7;
+  border-radius: 1rem;
+  width: 20rem;
+  height: 25rem;
+  text-align: center;
+}
+.plan_list3 .plan_table{
+  padding: 1rem 1.3rem 0 2rem;
+  text-align: left;
+}
+.plan_list3 .plan_time{
+  padding: 1rem 0 0 1.5rem;
+  text-align: center;
+}
+.plan_bottom_list {
+  display: flex;
+  margin: 1rem auto;
+  justify-content: center;
+  margin: 3rem 0 5rem 0;
+  font-size: 0.9rem;
+}
+.plan_time {
+  display: inline-block;
+  text-align: center;
+}
+.plan_time th{
+  padding: 0.5rem 2.5rem 0.5rem 2rem;
+}
+.plan_list4 {
+  background-color: #ebdaef;
+  border-radius: 1rem;
+  width: 20rem;
+  height: 30rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+.plan_list4 .plan_table{
+  padding: 2.5rem 1.5rem;
+}
+.plan_list4 p{
+  padding: 1rem;
+  text-align: left;
+}
+.plan_list5 {
+  background-color: #f0f0f0;
+  border-radius: 1rem;
+  width: 20rem;
+  height: 30rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+.plan_list6 {
+  background-color: #f0f0f0;
+  border-radius: 1rem;
+  width: 20rem;
+  height: 30rem;
+  text-align: center;
+}
+.plan_list6 .plan_table{
+  padding-top: 1rem;
+}
+.plan_table ul {
+  list-style: none;
+  text-align: left;
+  padding: 0.5rem 1.5rem;
+}
+.plan_table li {
+  padding: 0.3rem 0;
+}
+
+/* ニュース */
+.news_list_page {
+  background-color: #f4d0b8;
+  color: #fff;
+  height: 6rem;
+  position: relative;
+  text-align: center;
+	width: 100%;
+	margin-top: 1rem;
+}
+
+/* ブログ */
+.blog_list_page {
+  background-color: #b3cce0;
+  color: #fff;
+  height: 6rem;
+  position: relative;
+  text-align: center;
+	width: 100%;
+	margin-top: 1rem;
+}
+
+/* ギャラリー */
+.gallery_list_page {
+  background-color: #DCCAC6;
+  color: #fff;
+  height: 6rem;
+  position: relative;
+  text-align: center;
+	width: 100%;
+	margin-top: 1rem;
+}
+.gallery_container {
+	padding: 3rem 30rem;
+	text-align: center;
+}
+.gallery_container img {
+	width: 35rem;
+	height: 50rem;
+}
+.gallery_container p,h2,li {
+	text-align: left;
+}
+.gallery_list {
+	padding: 5rem;
+}
+.gallery_list li {
+	list-style: none;
+}
+.gallery_container h2 {
+  font-size: 1.5rem;
+  display: flex;
+  background: linear-gradient(transparent 70%, #E8EBF2 70%);
+  padding-left: 1rem;
+  align-items: center;
+}
+.gallery_container span {
+  font-size: 1rem;
+  padding-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+/* アバウトアス */
+.about_list_page {
+  background-color: #edbaef;
+  color: #fff;
+  height: 6rem;
+  position: relative;
+  text-align: center;
+	width: 100%;
+	margin-top: 1rem;
+}
+.about_list {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	width: 50rem;
+	height: 12rem;
+	border-collapse: collapse;
+}
+.about_list th,td{
+border: solid 0.1rem #dee2e6;
+}
+.about_list th{
+	padding: 0 3rem;
+}
+.about_list td{
+	padding-left: 10rem;
+}
+.about_container {
+	padding: 3rem 27rem;
+}
+.about_floormap {
+	text-align: center;
+}
+.about_floormap h2 {
+	padding-top: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  background: linear-gradient(transparent 70%, #92cfcf 70%);
+  padding-left: 1rem;
+  align-items: center;
+}
+.about_floormap span {
+  font-size: 1rem;
+  padding-left: 2rem;
+  margin-top: 0.5rem;
+}
+.about_floormap img {
+	padding-top: 3rem;
+	width: 40rem;
+	height: 60rem;
+}
+
+
+/* コンタクト */
+.contact_list_page {
+  background-color: #bcddcd;
+  color: #fff;
+  height: 6rem;
+  position: relative;
+  text-align: center;
+	width: 100%;
+	margin-top: 1rem;
+}
+.contact_container {
+	display: flex;
+	justify-content: center;
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+}
+.contact_name {
+	padding-bottom: 1rem;
+}
+input {
+	width: 22rem;
+	height: 1.8rem;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+}
+.contact_maeeage_box input {
+	width: 22rem;
+	height: 15rem;
+}
+.contact_submit_box {
+	margin-top: 3rem;
+}
+.contact_submit_box input {
+	width: 22rem;
+}
+.contact_boxes {
+	padding-left: 4rem;
+}
+.access {
+	margin-left: 7rem;
+}
+.access_map {
+	padding-top: 4rem;
+}
+.access_text  a {
+	text-decoration: none;
+}
